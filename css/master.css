@@ -1,0 +1,146 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  html{
+    font-size: 62.5%;
+  }
+
+  .ChatBoxDiv{
+    height: 100vh;
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+    min-width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  html{
+    font-size: 62.5%;
+  }
+  .ChatBoxDiv{
+    height: 70vh;
+    position: fixed;
+    bottom: 5rem;
+    right: 1rem;
+    min-width: 37rem;
+  }
+}
+
+body{
+  background-color: rgba(77, 73, 72, 0.94);
+}
+
+
+.flex_container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* =============================ChatBox_contetnt================================= */
+
+.chatBox_content{
+  position: absolute;
+  top:9rem;
+  width:100%;
+  bottom: 7rem;
+  background-color: white
+}
+
+.chatBox_content .audio_section{
+  position: absolute;
+  min-height: 3rem;
+  background-color: green;
+  width: 100%;
+}
+
+.chatBox_content .content_section{
+  margin-top: 3rem;
+}
+
+.chatBox_footer .chatbox_branding{
+  min-height: 2.5rem;
+  text-align: center;
+  font-size: 1.6rem;
+  background-color:rgb(180, 108, 12);
+  width: 100%;
+  color: white
+}
+
+/* ===================================Header================================ */
+.chatBox_header{
+  position: absolute;
+  width:100%;
+  min-height: 9rem;
+  background-color:rgb(180, 108, 12);;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 2rem 2rem 0 0;
+}
+
+.chatBox_header > .logo_image{
+  max-width: 18%;
+  border-radius: 50%;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.chatBox_header > h1.chatBox_info{
+  margin: 2rem 1rem;;
+  width: 60%;
+}
+
+.chatBox_header .chatBox_name{
+  display: block;
+  font-size: 1.8rem;
+}
+.chatBox_header .chatBox_status{
+  display: block;
+  font-size: 1.2rem;
+  margin:.5rem;
+}
+.chatBox_header >i {
+  margin: 2rem 1.5rem;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+  transition: 0.5s;
+}
+
+.chatBox_header >i:hover{
+  transform: scale(1.5) ;
+  cursor: pointer;
+}
+
+/* ====================================Footer =================================*/
+.chatBox_footer{
+  position: absolute;
+  bottom:0px;
+  width:100%;
+  min-height: 7rem;
+  background-color: white;
+}
+
+.chatBox_footer  textarea {
+  width: 77%;
+  margin: 1rem;
+  font-size: 1.6rem;
+  resize:none;
+  overflow: visible;
+  border: none;
+}
+.chatBox_footer  i {
+  margin: 1rem;
+  width: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.chatBox_footer  i:hover{
+  opacity: 1;
+  cursor: pointer;
+}
